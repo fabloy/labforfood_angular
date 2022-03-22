@@ -1,0 +1,233 @@
+
+article{
+    margin: 0 auto;
+    padding-top: 25vh;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    
+    flex: 100%;
+    height: 75vh;
+    
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+    align-content:center;
+    
+}
+article h1{
+    flex: 100%;
+    margin: 0;
+    color:orange;
+    font-size: 2.8rem;
+     font-style: italic;
+    
+    
+}
+
+article p{
+    color: white;
+   flex:100%;
+    font-size: 1.2rem;
+
+}
+
+article button img{
+    width: 45%;
+}
+#containerinput{
+  
+/*    align-items: flex-start;*/
+    margin-top: 1rem;
+    width: 70%;
+    padding: .5rem;
+    background: white;
+/*
+    position: static;
+    bottom: 20vh;
+*/
+    border: 2px solid orange;
+    border-radius: 4px;
+    transition: 1.2s ;
+    
+}
+label[for="indirizzo"]{
+    display: block;
+   
+    color: black;
+   text-align: center;
+   flex: 100%;
+    
+        
+}
+#indirizzo{
+    width: 100%;
+    text-align: center;
+    padding: .1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    
+    
+}
+
+button{
+    background:orange;
+    border: black solid 1px;
+    border-radius: 4px
+}
+
+#containerinput label{
+    font-size: 1rem;
+}
+#containerinput section{
+    margin: 0 auto;
+    display: flex;
+    width: 50%;
+    justify-content:space-around;
+ 
+}
+#containerinput section div{
+   
+
+    border-radius: 100%;
+   width: 32px;
+/*   padding: 5px;*/
+       margin-right: 5px
+    
+/*    padding: .1rem;*/
+    
+    
+}
+ #containerinput section div img{
+    width: 32px;
+    
+    height: 32px;
+}
+#containerinput button{
+        max-width: 2.5rem;
+    }
+    
+    /*////////////mediauqeries///////////////////////*/ 
+    @media screen and (min-width:768px){
+        
+ article:first-of-type{
+    padding-top: 15vh;
+    height: 100vh;
+     }
+    
+    article h1{
+    font-size: 4.5rem;
+    }
+
+article p{
+   font-size: 1.5rem;
+}
+#boxinputbutton{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        width: 80%;
+    margin: 0 auto;
+     }
+  
+    #boxinputbutton #indirizzo{
+        width: 50%;
+        font-size: 1rem;
+    }
+    
+/*
+    #containerinput button{
+        max-height: 2.5rem;
+        max-width: 4.5rem;
+    }
+*/
+article button img{
+    max-width: 28px;
+    max-height: 28px;
+}
+   
+    
+    aside p:first-of-type {
+    font-size: 1.8rem;
+    margin-top: .4;
+  
+}
+    #containslide p {
+     font-size: 1.6rem;
+          width: 70%;
+    margin: 0 auto;
+    }
+    
+    #divisor{
+        min-height: 400px;
+    }
+    
+#containslide{
+background: black;
+max-width: 70%;
+min-height: 55vw
+}
+
+#containslide p{
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+       button {
+    min-width: 12%;
+}
+
+
+
+}
+    
+/* mediaqueries desktop */
+@media screen and (min-width:1024px){
+    article{
+        margin: 0 auto;
+    /*    padding-top: 18vh;*/
+            padding: 2rem;
+        /* background-image: url(/img/sushidesktop.png); */
+       
+        display: flex;
+        justify-content: center;
+        flex-flow:row wrap;
+        align-content:center;
+        
+    }
+    article h1{
+        flex: 100%;
+        font-size: 4.5rem;
+    }
+    
+    article p{
+       flex:100%;
+      }
+        article section div img{
+            display: none;
+        }  
+        #containerinput{
+        width: 35%;
+        background: white;
+        padding: 0rem;
+        position:static;
+        margin-left: 10px;
+      
+            
+        
+    }
+        #indirizzo{
+            font-size: .8rem;
+        }
+        #containerinput button{
+            max-width: 2.5rem;
+        }
+         #containerinput input {
+            padding: 2px;
+            width: 50%;
+            display: block;
+            margin-right: 4px;
+            
+        }
+        
+}

@@ -1,0 +1,25 @@
+
+
+<div id="ristorantiTop" >
+    <div id="box1" *ngFor="let ristorante of ristoranti; let indexItem = index" >
+    <a [routerLink]="['/menu', ristorante.IdRistorante]">
+      <h3><strong> {{ristorante.Ristorante}} </strong></h3>
+      <div id="contimg"  >
+        <!-- <img src="{{ loghi[indexItem] }}" > -->
+        <img src="http://l4com.labforweb.it/backend/web/img/ristoranti/{{ristorante.Logo}}">
+      </div>
+      <h2>
+      {{(ristorante.Tipologia==="1") ? 'Pizzeria' : (ristorante.Tipologia==="2" ? 'Ristorante' : 'Fastfood')}}
+      </h2>
+    
+       <div class="caratteristiche">
+           <ul>
+             <li>Tempi di consegna:<br><span>{{ristorante.TempiConsegna}} min</span></li>
+              <li>Costi di consegna:<br> <span>{{ristorante.CostiConsegna}} €</span></li>
+              <li>Ordine minimo:<br> <span>{{ristorante.OrdineMinimo}} €</span></li>
+              
+          </ul>
+       </div>
+       </a>
+   </div>
+</div>

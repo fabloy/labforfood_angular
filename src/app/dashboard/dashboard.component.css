@@ -1,0 +1,78 @@
+article{
+    padding-top:15vh;
+    display: flex;
+    justify-content:center;
+    flex-flow:row wrap;
+    align-content:center;
+  color:white;
+    font-size: 1.5rem;
+     font-style: italic;
+}
+
+article div:first-child{
+    background: rgba(0, 0, 0, 0.88);
+    flex: 100%;
+}
+
+#vocidashboard{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    
+  
+}
+#vocidashboard li{
+   flex: 50%;
+    text-align: center;
+    background: #ffa500e6;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding:5px;
+    margin-top: 2px;
+    margin-right: 2px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+#vocidashboard li:hover{
+    background:orange;
+    }
+    #vocidashboard li:hover > a{
+        color:white
+    }
+.orange{
+    background-color: orange;
+}
+.grey{
+    background-color: grey;
+}
+#vocidashboard li:first-child{
+    margin-top: 0px;
+}
+
+section{
+    margin-top: 25px;
+    border-top: 1px rgba(0, 0, 0, 0.88) solid;
+    border-bottom: 1px rgba(0, 0, 0, 0.88) solid;
+   
+}
+
+section ul li{
+    background-color: rgb(218, 218, 218);
+    padding:3px;
+    cursor: pointer;
+}
+section ul li span{
+    font-weight: bold;
+}
+
+@media screen and (min-width:1024px){
+    #vocidashboard{
+        width: 90vw;
+    }
+    #vocidashboard li:first-child{
+        margin-top: 2px;
+    }
+    #vocidashboard li{
+         flex: 20%;
+     }
+}

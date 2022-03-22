@@ -1,0 +1,467 @@
+label{
+    font-size: 1.2rem;
+}
+img{
+    max-width: 90%;
+}
+#boxlogo{
+    width: 60px;
+    height: 60px;
+    
+}
+#navheader{
+     
+    overflow: auto;
+    margin: 0 auto;
+    position: fixed;
+    padding: .8rem;
+    width:100%;
+       z-index: 2;
+    background: rgba(0, 0, 0, 0.88);
+    display: flex;
+border-bottom: solid orange 2px;
+    flex-flow: row wrap;
+     transition: 1.5s background;
+    
+   
+}
+
+#containermenu{
+    margin: 0 auto;
+    max-height: 0;
+    overflow: auto;
+    width: 100%;
+    transition: 0.7s max-height;
+}
+#menu{display: none;
+    margin: 0 auto;
+}
+
+label[for="menu"]{
+    
+   background: black solid 1px;
+    flex: 60%;
+    margin-top: 1rem;
+    text-align: right;
+}
+label[for="menu"]:before{
+    content: "MENU";
+   cursor: pointer;
+    color: white;
+   
+}
+#menu:checked~label[for="menu"]:before{
+     content: "CHIUDI MENU";
+    
+}
+#menu:checked~#containermenu{
+    max-height: 300px;
+}
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: .3rem;
+}
+
+
+#vocimenu a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+#vocimenu li{
+   
+    text-align: left;
+    background: #ffa500e6;
+    border-radius: 1px;
+    font-size: 1.1rem;
+    border: solid 1px black;
+    margin-top: 2px;
+
+}
+
+#vocimenu li a{
+    color: white;
+    cursor: pointer;
+    
+}
+.icone {
+   
+    display: flex;
+    justify-content:flex-end;
+    background: rgba(0, 0, 0, 0.7);
+    margin-top: 2px;
+  
+    
+}
+.icone li{
+    margin-left: 10px;
+}
+.icone li a {
+    color:#ffa500e6;
+    text-decoration: none;
+     font-size: 1.3rem;
+    font-family: "social2";
+   
+}
+
+
+/*login*/
+#login{
+    margin: 0 auto;
+    width: 80%;
+    background: white;
+    border: orange .2rem solid;
+    min-height: 50vh;
+    position: fixed;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    border-radius: 5px;
+    z-index: 90;
+    padding: 1rem;
+  display: none;
+
+}
+.chiudi{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+#login h2{
+    color: orange;
+    
+}
+
+#login label{
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+}
+#login input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    
+    border: solid 2px orange;
+    margin-bottom: 1rem;
+/*    outline: 0;*/
+}
+
+ button{
+  width: 25%;
+  padding: 4px;
+     cursor: pointer;
+}
+
+.ok{
+    color: orange;
+    
+}
+
+.ko{
+    color: red;
+}
+#ricordapsw{
+    margin-top: 2rem;
+}
+
+/* inizio registrazione*/
+
+#registrazione{
+    width: 80%;
+    background: white;
+    border: orange .2rem solid;
+    min-height: 50vh;
+    position: fixed;
+    margin-top: 15vh;
+    border-radius: 5px;
+    z-index: 91;
+    display: none;
+    padding: 1rem;
+    margin-left: 10vw;
+ 
+}
+
+.chiudi{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.chiudiregistrazione{
+    width: 100%;
+    text-align: right;
+    padding: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+
+#registrazione h2{
+    color: orange;
+    
+}
+
+#registrazione label{
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    font-size: .8rem;
+}
+#registrazione input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    
+    border: solid 2px orange;
+    margin-bottom: .7rem;
+
+}
+
+#registrazione input:nth-child(10){
+    margin-bottom: 0px;
+   
+}
+#registrazione button{
+    margin-top: 5px;
+}
+#informartiva{
+    width: 10%;
+    background-color: green;
+}
+/*Mediaqueries ipad/////////////////*/
+@media screen and (min-width:768px) {/* da 768 px in su... */
+    label{font-size: 2rem}
+/*   button { width: 15%}*/
+    input{font-size: 1.5rem}
+    
+   #navheader #boxlogo{
+  
+    width: 100px;
+ }
+    label[for="menu"]:before{
+    font-size: 1.5rem
+   
+}
+    #containermenu{
+        margin-top: 1.87rem;
+    }
+    #menu:checked~#containermenu{
+    max-height: 500px;
+}
+    #vocimenu li{
+   text-align: left;
+    background: #ffa500e6;
+    border-radius: 1px;
+    font-size: 2.1rem;
+    border: solid 1px black;
+    margin-top: 3px;
+
+}
+
+    #vocimenu li a{
+        font-size: 2rem;
+    }
+    .icone{
+        padding: 0.625rem;
+    }
+    .icone li a {
+    font-size: 1.5rem;
+ }
+    #login, #registrazione{
+        width: 50%;
+        margin-left: 25%;
+        padding: 1rem;
+    }
+
+    #login a, #registrazione a{
+        font-size: 1.2rem;
+    }
+    #login h2, #registrazione h2{
+        font-size: 3rem;
+    }   
+     
+    #login p, #registrazione p{
+        font-size: 2rem;
+    }
+    #login label, registrazione label{
+        font-size: 1.8rem;
+    }
+ #login input, #registrazione input{
+     margin: 0 auto;
+    padding: 6px;
+     width: 80%
+ }
+ #login button, #registrazione button{
+    
+    padding: .8rem;
+    font-size: 1.5rem;
+       margin-top: 15px;
+       border-radius: 5px;
+}
+#registrazione{
+    max-height: 75vh;
+    overflow: auto;
+    margin: auto 25%;
+}
+
+    #registrazione div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+}
+    #registrazione div label {
+    font-size: 1.3rem;
+    margin-bottom: 3px;
+    margin-top: 3px; 
+    width: 60%;
+}
+    #registrazione #informativa{
+     width: 1.3rem;
+        height: 20px;
+    margin: 0px;
+}
+    #containerinput{
+    z-index: 1;
+    bottom: 10vh;
+    padding: .5rem;
+}
+    #ricordapsw{
+    margin-top: 0rem;
+}
+   
+    #containerinput input {
+        padding: 2px;
+        width: 80%;
+        display: block;
+        margin-right: 4px;
+    }
+    #containerinput section{
+   justify-content:center;
+    }
+    #containerinput section div{
+     margin: 8px
+    }
+     #containerinput section div img{
+     width: 100%;
+     height: 100%;
+    }
+   
+}
+
+/*  mediaqueries ipad ////////*/
+@media screen and (min-width:1024px)
+{
+    button:hover{
+        background: #9f9f9f;
+    }
+    
+    
+    #navheader{
+    position: static;
+    padding: .8rem;
+    width:100%;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.88);
+    display: flex;
+    border-bottom: solid orange 2px;
+    flex-flow: row nowrap;
+     transition: 0s background;
+    
+   
+}
+    #boxlogo{
+        margin-left: 10px;
+    }
+#containermenu{
+    margin: 0 auto;
+    max-height: 500px;
+    overflow:visible;
+    width: 100%;
+    display: flex;
+    transition: 0s overflow;
+}
+#menu{
+    display: none;
+}
+
+label[for="menu"]{
+  display: none;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+    padding: .3rem;
+}
+    #vocimenu{
+        display: flex;
+        justify-content:flex-end;
+        align-items: center;
+        align-content: center;
+        padding: .4rem;
+        width: 80%;
+       
+       
+    
+    }
+#vocimenu li{
+    width: 22%;
+    margin-right: 5px;
+    margin-left: 5px;
+    
+    text-align: center;
+    background: rgba(255, 165, 0, 0);
+    border-radius: 1px;
+    
+    border: solid 1px rgba(0, 0, 0, 0);
+    margin-top: 0px;
+
+}
+    #vocimenu li a:hover{
+    color: orange;
+ 
+}
+
+#vocimenu li a{
+    color:#9f9f9f;
+    font-size: 1.3rem;
+    font-weight: bold;
+    
+    
+}
+.icone {
+   
+    display: flex;
+    justify-content:flex-end;
+    align-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0);
+    margin-top: 2px;
+    width: 20%;
+  }
+.icone li{
+    margin-left: 10px;
+}
+.icone li a {
+    color:#9f9f9f;
+    text-decoration: none;
+     font-size: 1.5rem;
+    font-family: "social2";}
+
+    .icone li a:hover{
+        color: orange; 
+    }
+
+   
+}

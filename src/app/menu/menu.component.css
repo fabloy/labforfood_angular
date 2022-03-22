@@ -1,0 +1,123 @@
+/*/////////////////////////////// BURGER KING*/
+#wrapper{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top:15vh;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
+
+  
+}
+
+#ristorantiTop > div:nth-child(odd){
+    background: rgba(0, 0, 0, 0.88);
+    
+}
+#ristorantiTop > div:nth-child(even){
+    background: #ffa500e6;
+    color: black;
+}
+
+
+#containBurger{
+    width: 100%;
+}
+#containBurger img{
+    width: 40%;
+}
+#wrapper h2{
+    flex: 100vw;
+    font-size: 2rem;
+}
+#wrapper h3{
+    flex: 100vw;
+    font-size: 1.5rem;
+}
+#wrapper section{
+    flex: 100vw;
+}
+#wrapper section p{
+    text-transform: lowercase;
+    color: orange;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: .8rem;
+    
+    margin: 0 auto;
+}
+
+.asdivided{
+    margin: 0 auto;
+    padding: 0;
+}
+#box1 #contimg, #box2 #contimg, #box3 #contimg, #box4 #contimg, #box5 #contimg, #box6 #contimg{
+    background: rgba(255, 0, 0, 0);
+}
+
+button{
+    background:orange;
+    border: black solid 1px;
+    border-radius: 5px;
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* IPAD */
+@media screen and (min-width:768px){
+  
+    #ristorantiTop{ 
+        padding-left:2%;
+        padding-right:2%;
+     
+       }
+    
+    #ristorantiTop:first-child{
+        padding-top: 19vh;
+    }
+    
+    #ristorantiTop > * {
+     width: 40vw;
+     margin-right: 10px;
+     margin-top: 1rem;
+       
+    }
+    #ristorantiTop img{
+       width: 100%;
+    }
+    #ristorantiTop h3{
+       font-size: 1.8rem;
+       color: white;
+       font-weight: bold;
+    }
+    #ristorantiTop h2{
+      font-size: 1rem;
+       color: white;
+       margin-bottom: 2rem;
+       font-style: italic;
+       
+       
+    }
+       #ristorantiTop label{
+           font-size: 1.2rem;
+       }
+       #ristorantiTop p {
+       font-size: 1rem;
+    }
+       #ristorantiTop div:nth-child(odd) .caratteristiche{
+       font-size: 1rem;
+    }
+    #ristorantiTop div:nth-child(even) .caratteristiche{
+       font-size: 1rem;
+      }
+       
+    
+    
+       #ristorantiTop span img {
+       width: 30px;
+    }
+    
+   
+    }

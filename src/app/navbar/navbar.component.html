@@ -1,0 +1,93 @@
+<nav id="navheader">
+       
+    <div id="boxlogo">
+<a [routerLink]="[ 'home' ]"><img src="../assets/img/logo-bianco.png"></a>
+</div>
+   
+   <input type="checkbox" id="menu">
+   <label for="menu"></label>
+   
+   <div id="containermenu">
+    <ul id="vocimenu">
+        <li><a id="homevoce" [routerLink]="['home']">Home</a></li>
+        <li><a id="loginvoce">Login/Registrazione</a></li>
+        <li><a [routerLink]="['ristoranti']">Ristoranti</a></li>
+    </ul>
+    
+       <ul class="icone">
+        <li><a href="https://it-it.facebook.com/">a</a></li>
+        <li><a href="https://www.instagram.com/">b</a></li>
+        <li><a href="https://www.youtube.com/">c</a></li>
+    </ul>
+  </div>
+</nav>
+
+  <!--    inizio login -->
+<div id="login" *ngIf ="isLogged">
+    <p class="chiudi">X</p>
+     <h2>Login</h2>
+     
+      <form  id="modulo" (submit)="onLoginSubmit($event)"  method="POST">
+      
+    <label for="email">Username:</label>
+     <input name="username" [(ngModel)]="username" id="email" placeholder=" inserisci username"  type="email" required  >
+     
+     <label for="password">Password:</label>
+     <input  name="password" [(ngModel)]="password" type="password" id="password" placeholder="inserisci password" required>
+    
+    <button>enter</button>
+    <br>
+    <span class="ko" > {{msg_error}} </span>
+    <span class="ok">{{msg_Ok}} </span>
+    <div id="ricordapsw">
+        <p><a href="#">ricorda password</a></p>
+        <p><a id="creaccount" [routerLink]="['home']">crea un nuovo account</a></p>
+    </div>
+    
+    
+     
+ </form>
+ </div>
+  <!--    fine login -->
+  <!--    inizio registrazione -->
+  <div id="registrazione">
+    <p class="chiudiregistrazione">X</p>
+     <h2>registrazione</h2>
+     
+      <form id="submitregistrazione" (submit)="onRegisterSubmit($event)">
+        
+        <label for="emailregistrazione">Indirizzo email:</label>
+     <input [(ngModel)]="email" name="email" id="emailregistrazione" placeholder=" Inserisci indirizzo email" type="email" autocomplete="off" required data-numero="8">
+
+     <label for="nominativo">nominativo:</label>
+     <input [(ngModel)]="nominativo" name="nominativo" id="nominativo" placeholder="inserisci nominativo" type="text" autocomplete="off" required data-numero="8">
+
+    <label for="username">username:</label>
+     <input [(ngModel)]="username" name="username" id="username" placeholder=" Inserisci username" type="text" autocomplete="off" required data-numero="8">
+     
+     <label for="psw1">Password:</label>
+     <input [(ngModel)]="password" name="password" type="password" id="psw1" placeholder="Inserisci password" required data-numero="8">
+     
+     <label for="psw2">Ripeti password:</label>
+    <input [(ngModel)]="password2" name="password2" type="password" id="psw2" placeholder="Ripeti password" required data-numero="8">
+     
+    <span class="ko" style="font-size: .8rem;" > {{msg_errorR}} </span>
+    <span class="ok" style="font-size: .8rem;">{{msg_OkR}} </span>
+    <br>
+    <button>enter</button>
+    
+    
+    
+    <div>
+      
+    <label for="informativa">Ho letto l'informativa sulla privacy {{msg_informativa}}</label>
+      
+    <input [(ngModel)]="informativa" name="informativa" type="checkbox" id="informativa" >
+    
+    </div>
+    
+    <span class="checkinformativa"></span><br>
+    <span class="messageloginregistrazione"> </span>
+  </form>
+</div>
+<!--    fine registrazione -->

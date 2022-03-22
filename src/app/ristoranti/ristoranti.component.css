@@ -1,0 +1,273 @@
+/*RISTORANTI///////////////////////////////////////////////////*/
+
+#ristorantiTop{
+    padding-top: 8vh;
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    justify-content: center;
+
+}
+#ristorantiTop img{
+    width: 100%;
+    border-radius: 18px;
+}
+#ristorantiTop section{
+  display: flex;
+    justify-content:space-around;
+    margin-top: 3rem;
+
+   
+    
+   
+}
+#ristorantiTop section img{
+    width: 100px;
+
+  
+    
+}
+#ristorantiTop > * {
+  width: 80vw;
+  margin-top: 3rem;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+#ristorantiTop div:nth-child(odd){
+    background: rgba(0, 0, 0, 0.88);
+    
+}
+#ristorantiTop div:nth-child(even){
+    background: #ffa500e6;
+    color: black;
+}
+
+#ristorantiTop div:nth-child(even):hover h3 {
+    color: black;
+    transition: .8s color;
+   }
+#ristorantiTop div:nth-child(even):hover div img{
+margin-top: -5px;
+    transition: .8s margin-top;
+}
+#ristorantiTop div:nth-child(even):hover{
+    background: orange;
+    transition: .8s ;
+}
+
+#ristorantiTop div:nth-child(odd):hover h3 {
+    color: orange;
+    transition: .8s color;
+   }
+#ristorantiTop div:nth-child(odd):hover div img{
+
+    margin-top: -5px;
+    transition: .8s margin-top;
+
+}
+#ristorantiTop div:nth-child(odd):hover{
+    background: black;
+    transition: .8s background;
+}
+
+
+
+
+#ristorantiTop h3{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+#ristorantiTop h2{
+   font-size: 1.1rem;
+    color: white;
+    margin-bottom: 1rem;
+    font-style: italic;
+    
+    
+}
+    #ristorantiTop p {
+    font-size: 1rem;
+    font-family: 'Nunito';
+    color: white;
+    margin: 0 auto;
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s max-height;
+}
+
+#ristorantiTop span{display: block;
+}
+#ristorantiTop span img{
+    width: 40px;
+    position: relative;
+    top: -22px;
+}
+
+#ristorantiTop label{
+  color: white;
+}
+#ristorantiTop label:before {
+    content: "Descrizione";
+    cursor: pointer;
+    color: white;
+}
+
+#ristorantiTop input{
+    display: none;
+}
+#ristorantiTop input:checked~label:before{
+     content: "Chiudi Descrizione";
+    
+}
+#ristorantiTop input:checked~p{
+    max-height: 250px;
+}
+#ristorantiTop ul li span{
+    font-weight: bold;
+    
+}
+
+#ristorantiTop div:nth-child(odd) .caratteristiche{
+    width: 100%;
+    margin: 0 auto;
+    color: orange;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0);
+  
+    margin-top: .5rem;
+}
+#ristorantiTop div:nth-child(even) .caratteristiche{
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: black;
+    background: rgba(255, 255, 255, 0);
+      margin-top: .5rem;
+}
+#ristorantiTop div.caratteristiche ul{
+   display: flex;
+    justify-content: center;
+    flex-flow: wrap;
+}
+#ristorantiTop div.caratteristiche ul li{
+   display:block;
+    width: 100%;
+}
+#contimg img{
+    max-width: 30%;
+}
+
+/*/////////////////////////////// BURGER KING*/
+#wrapper{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    width: 100%;
+    padding-top:15vh;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    
+/*dissolvenza apertura burgerking gestita in domcontent.js*/
+    display: none;
+}
+
+
+
+#containBurger{
+    width: 100%;
+}
+#containBurger img{
+    width: 40%;
+}
+#wrapper h2{
+    flex: 100vw;
+    font-size: 2rem;
+}
+#wrapper h3{
+    flex: 100vw;
+    font-size: 1.5rem;
+}
+#wrapper section{
+    flex: 100vw;
+}
+#wrapper section p{
+    text-transform: lowercase;
+    color: orange;
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: .8rem;
+    
+    margin: 0 auto;
+}
+
+.asdivided{
+    margin: 0 auto;
+    padding: 0;
+}
+#box1 #contimg, #box2 #contimg, #box3 #contimg, #box4 #contimg, #box5 #contimg, #box6 #contimg{
+    background: rgba(255, 0, 0, 0);
+}
+
+  /*RISTORANTI/////////////MEDIA IPAD*/
+@media screen and (min-width:768px){
+  
+#ristorantiTop{ 
+    padding-left:2%;
+    padding-right:2%;
+ 
+   }
+
+#ristorantiTop:first-child{
+    padding-top: 19vh;
+}
+
+#ristorantiTop > * {
+ width: 40vw;
+ margin-right: 10px;
+ margin-top: 1rem;
+   
+}
+#ristorantiTop img{
+   width: 100%;
+}
+#ristorantiTop h3{
+   font-size: 1.8rem;
+   color: white;
+   font-weight: bold;
+}
+#ristorantiTop h2{
+  font-size: 1rem;
+   color: white;
+   margin-bottom: 2rem;
+   font-style: italic;
+   
+   
+}
+   #ristorantiTop label{
+       font-size: 1.2rem;
+   }
+   #ristorantiTop p {
+   font-size: 1rem;
+}
+   #ristorantiTop div:nth-child(odd) .caratteristiche{
+   font-size: 1rem;
+}
+#ristorantiTop div:nth-child(even) .caratteristiche{
+   font-size: 1rem;
+  }
+   
+
+
+   #ristorantiTop span img {
+   width: 30px;
+}
+
+}
+

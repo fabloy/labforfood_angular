@@ -1,0 +1,162 @@
+aside{
+  margin: 0 auto;
+     padding-top: 6vh;
+     flex: 100%;
+      display: flex;
+     flex-flow: row wrap;
+     justify-content: center;
+ }
+ aside p:first-of-type{
+     
+     font-weight: bold;
+     font-size: 1.3rem;
+     color: orange;
+     
+     width: 100%;
+     margin-top: .2rem;
+     padding:.2rem;
+ }
+ #scarica{
+    
+     margin: 0 auto;
+     width: 100%;
+     display: flex;
+     
+     flex-flow: row wrap;
+     /* background-image: url(img/iphone2.png); */
+     background-repeat: no-repeat;
+     background-size: contain;
+     background-position: center center;
+     justify-content: space-around;
+    min-height: 10vh;
+    padding: 10%;
+ }
+ /*
+ #scarica div{
+     flex: 100%;
+       
+ }
+ */
+ 
+      #scarica #appstore, #playstore{
+     width: 60%;
+       
+ }
+ 
+ 
+ #divisor{
+      /* background-image: url(img/float.png); */
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: contain;
+     width: 100%;
+     min-height: 350px;
+ /*    position: relative;*/
+     
+ }
+ 
+ aside section{
+   
+     width: 100%;
+     margin: 0 auto;
+    
+ }
+ 
+ 
+ 
+ aside .icone {
+     justify-content: center;
+     margin-top: 0vh;
+     position: relative;
+     top: 5px;
+     background:  #ffa500e6;
+     border-bottom: black solid .5px;
+     border-top: black solid .5px;
+     display: flex;
+     
+ }
+ aside .icone li a {
+    color: black;
+    font-family: "social2";
+    list-style: none;
+    margin-left: 5px;
+     }
+ 
+ #containslide{
+     padding-top: 1rem;
+     background:black;
+     min-height: 80vw;
+     border-radius: 5px;
+     width: 100%;
+ }
+ #containslide p{
+     padding: 0rem 1rem;
+     font-size: 1rem;
+     font-weight: normal;
+ }
+   #slide{
+    /* parametro obbligatorio */
+    overflow:hidden;
+    /* qui potete personalizzare la dimensione , la posizione e l'aspetto */
+   max-width:90%;
+       
+     min-height:54vw;
+    margin: 0 auto;
+    position:relative;
+/*    top:20px;*/
+       top: 1vh;
+      left:0px;   
+    background:white;
+    box-shadow:0px 0px 5px black;
+      
+     
+   }
+   
+   /* gli stili definiti qui di seguito non devono essere modificati ! */
+   #slide img{
+    max-width:100%;
+    position:absolute;
+    top:0px;left:0px;
+   }
+   #slide:hover p{
+    opacity:1;
+   }
+
+
+@media screen and (min-width:768px)
+{
+    #slide{
+/*    qui potete personalizzare la dimensione , la posizione e l'aspetto */
+     max-width:90%;
+     min-height:73%;
+   }
+  
+#containslide p {
+    font-size: 1.6rem;
+         width: 70%;
+   margin: 0 auto;
+   }
+   
+   #divisor{
+       min-height: 400px;
+   }
+   
+#containslide{
+background: black;
+max-width: 70%;
+min-height: 55vw
+}
+
+#containslide p{
+   font-size: 1.2rem;
+   font-weight: normal;
+}
+
+   }
+
+   @media screen and (min-width:1024px) {
+    #scarica #appstore, #playstore{
+        width: 30%;
+          
+    }
+   }

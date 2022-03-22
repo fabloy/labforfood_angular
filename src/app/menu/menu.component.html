@@ -1,0 +1,19 @@
+
+  <div id="ristorantiTop" >
+    
+    <div class="fooditem" id="piatto1" *ngFor="let piatto of piatti">
+        
+       <h3><strong>{{piatto.Prodotto}}</strong></h3>
+
+       <hr>
+        <p> {{piatto.Descrizione}} </p>
+        
+        <div class="caratteristiche"> 
+            <ul>
+               <li>{{piatto.Prezzo}} €</li>
+               <li><button>Prenota</button></li>
+           </ul> 
+        </div>
+           
+    </div>
+    </div>
